@@ -18,4 +18,7 @@ public class StudentService {
     }
 
 
+    public void studentById(long id) {
+        studentRepo.findById(id).orElseThrow(() -> new RuntimeException("Student Not Found"));
+    }
 }
