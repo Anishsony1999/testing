@@ -20,6 +20,6 @@ public class MainController {
     @GetMapping("{id}")
     public String studentById(@PathVariable long id){
         studentService.studentById(id);
-        return "page";
+        return null;
     }
 }
